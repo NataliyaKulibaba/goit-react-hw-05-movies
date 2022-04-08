@@ -1,0 +1,11 @@
+.form{
+    margin-top: 15px;
+}
+.moviesList{
+padding-inline-start: 0px;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
