@@ -1,19 +1,21 @@
-.cast{
-    display: flex;
-    flex-wrap: wrap;
+.cast {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.castImg{
-    width: 70px;
-    border-radius: 3px;
+.castImg {
+  width: 70px;
+  border-radius: 3px;
 }
 
-.castItem{
-    display: flex;
-    padding: 10px;
+.castItem {
+  display: flex;
+  padding: 10px;
   width: 350px;
 }
-.castItemDesc{
-    margin: auto 0;
-
+.castItemDesc {
+  margin: auto 0;
+}
+.castName {
+  color: #fff;
 }

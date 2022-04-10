@@ -1,11 +1,29 @@
-.form{
-    margin-top: 15px;
+.form {
+  margin-bottom: 15px;
 }
-.moviesList{
-padding-inline-start: 0px;
+
+.moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin: -15px;
 }
-li{
-    list-style: none;
-    text-decoration: none;
-    padding-bottom: 3px;
+.movieItem {
+  list-style: none;
+  width: 200px;
+  margin: 15px;
+}
+
+.movie {
+  width: 170px;
+  border-radius: 5px;
+}
+p {
+  margin: 0;
+}
+.movieTitle {
+  color: #fff;
+}
+.movieLink {
+  text-decoration: none;
 }

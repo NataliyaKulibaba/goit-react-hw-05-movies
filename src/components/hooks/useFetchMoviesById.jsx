@@ -6,10 +6,7 @@ export function useFetchMoviesById() {
   const [movie, setMovie] = useState('');
   const { movieId } = useParams();
 
-  console.log(movieId);
-
   useEffect(() => {
-    console.log('зайшов в юз-ефект');
     fetchMoviesByIdAPI.fetchMoviesById(Number(movieId)).then(setMovie);
   }, [movieId]);
 

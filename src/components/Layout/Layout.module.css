@@ -1,13 +1,24 @@
-.link.active {
-  color: green;
+body {
+  background-color: #111328;
 }
+
 .layout {
   padding: 20px 50px;
 }
-.link {
+.link,
+.activeLink {
   text-transform: uppercase;
   margin-right: 30px;
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-size: medium;
+}
+
+.navigation {
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.activeLink {
+  color: red;
 }

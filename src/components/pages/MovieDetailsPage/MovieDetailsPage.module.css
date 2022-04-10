@@ -1,24 +1,36 @@
 .movieImg {
-    width: 200px;
-    border-radius: 5px;
+  width: 200px;
+  border-radius: 5px;
 }
 
 .movie {
-    padding: 50px 30px 50px;
-    
+  padding: 50px 0;
 }
 
 .movieInfo {
-    display: flex;
+  display: flex;
 }
 
-li{
-   list-style: none;
+li {
+  list-style: none;
 }
 
-.movieList{
-    padding-bottom: 10px;
+.movieItem {
+  padding-bottom: 10px;
 }
-.movieAditional{
-    text-transform: uppercase;
+.movieAditional {
+  text-transform: uppercase;
+}
+.movieDesc {
+  margin-left: 50px;
+}
+.movieTitle,
+.movieItem,
+.movieAditional,
+.movieLink,
+.movieInfo {
+  color: #fff;
+}
+.activeLink {
+  color: red;
 }
