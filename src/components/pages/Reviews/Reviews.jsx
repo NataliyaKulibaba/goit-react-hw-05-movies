@@ -4,8 +4,6 @@ import s from './Reviews.module.css';
 export default function Reviews() {
   const review = useFetchMoviesReview();
 
-  console.log(review.length);
-
   return (
     <div>
       {review.length ? (

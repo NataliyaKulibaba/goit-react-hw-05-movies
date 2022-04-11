@@ -1,15 +1,20 @@
 import { useFetchMoviesById } from '../../hooks/useFetchMoviesById';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import s from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
   const movie = useFetchMoviesById();
+  const navigate = useNavigate()
+
+  function goBack(){
+    navigate(-1)
+  }
 
   return (
     <>
-      <Link to="/movies">
-        <button type="button">Return to search</button>
-      </Link>
+      
+        <button type="button" onClick={goBack}>Go back</button>
+      
       <div className={s.movie}>
         {movie ? (
           <div>
