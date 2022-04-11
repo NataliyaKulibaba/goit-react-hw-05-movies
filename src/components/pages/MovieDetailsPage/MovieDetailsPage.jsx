@@ -1,13 +1,15 @@
 import { useFetchMoviesById } from '../../hooks/useFetchMoviesById';
-import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate, useLocation } from 'react-router-dom';
 import s from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
   const movie = useFetchMoviesById();
   const navigate = useNavigate()
+  const location = useLocation()
+
 
   function goBack(){
-    navigate(-1)
+    navigate(location?.state?.from ?? '/');
   }
 
   return (
@@ -40,6 +42,7 @@ export default function MovieDetailsPage() {
               <li>
                 <NavLink
                   to={'cast'}
+                  state={location.state}
                   className={({ isActive }) =>
                     isActive ? s.activeLink : s.movieLink
                   }
@@ -50,6 +53,7 @@ export default function MovieDetailsPage() {
               <li>
                 <NavLink
                   to={'reviews'}
+                  state={location.state}
                   className={({ isActive }) =>
                     isActive ? s.activeLink : s.movieLink
                   }
